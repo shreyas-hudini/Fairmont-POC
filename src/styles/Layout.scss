@@ -1,0 +1,46 @@
+.homepage-container {
+  max-width: 480px; // Set the overall width
+  margin: 0 auto; // Center the layout
+  padding: 0 15px;
+
+  .app-header {
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .logo {
+    margin: 2% 5%;
+  }
+
+  .drawer-header {
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+
+  .component-content {
+    padding: 20px;
+    font-size: 24px;
+  }
+  .main-content img {
+    // aspect-ratio: 9/16;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+.css-dl7nww-MuiPaper-root-MuiDrawer-paper {
+  max-width: 480px;
+  margin: 0 auto;
+  //   text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  align-items: center;
+}
+
+.css-1edfpdg-MuiTypography-root {
+  color: black;
+  text-align: center;
+}
+// .css-142372x-MuiButtonBase-root-MuiButton-root {
+//   color: #393939;
+// }
