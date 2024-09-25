@@ -1,6 +1,6 @@
 .homepage-container {
-  max-width: 480px; // Set the overall width
-  margin: 0 auto; // Center the layout
+  max-width: 632px;
+  margin: 0 auto;
   padding: 0 15px;
 
   .app-header {
@@ -18,20 +18,53 @@
     background-color: #f5f5f5;
   }
 
-  .component-content {
-    padding: 20px;
-    font-size: 24px;
+  .carousel-content {
+    position: relative;
   }
-  .main-content img {
-    // aspect-ratio: 9/16;
+
+  .carousel-image {
     width: 100%;
     object-fit: contain;
   }
+
+  .carousel-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-family: "Domaine Display", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
 }
-.css-dl7nww-MuiPaper-root-MuiDrawer-paper {
-  max-width: 480px;
+
+.footer {
+  position: fixed;
+  z-index: 200;
+  width: 95%;
+  bottom: 0;
+  background-color: white;
+  padding: 20px 0;
   margin: 0 auto;
-  //   text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .footer-button {
+    width: 200px;
+  }
+}
+
+.css-dl7nww-MuiPaper-root-MuiDrawer-paper {
+  max-width: 768px;
+  margin: 0 auto;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   align-items: center;
@@ -40,7 +73,60 @@
 .css-1edfpdg-MuiTypography-root {
   color: black;
   text-align: center;
+  font-family: "ITC Franklin Gothic Std", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
 }
-// .css-142372x-MuiButtonBase-root-MuiButton-root {
-//   color: #393939;
-// }
+
+/* Desktop view */
+@media (min-width: 768px) {
+  .homepage-container {
+    max-width: 540px;
+    padding: 0 30px;
+
+    .app-header {
+      text-align: left;
+      padding: 20px;
+    }
+
+    .logo {
+      margin: 1% 40%;
+    }
+
+    .drawer-header {
+      padding: 30px;
+    }
+
+    .carousel-image {
+      object-fit: cover;
+    }
+
+    .carousel-text {
+      bottom: 20px;
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  .footer {
+    width: 50%;
+    padding: 30px 0;
+
+    .footer-button {
+      width: 250px;
+    }
+  }
+
+  .css-dl7nww-MuiPaper-root-MuiDrawer-paper {
+    max-width: 530px;
+  }
+
+  .css-1edfpdg-MuiTypography-root {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

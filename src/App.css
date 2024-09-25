@@ -2,20 +2,38 @@
   text-align: center;
   /* background-color: aqua; */
 }
+
 .footer {
   position: fixed;
   z-index: 200;
-  width: 35.6%;
+  width: 95%;
   bottom: 0;
   background-color: white;
-  padding: 20px 0%;
+  padding: 10px 0;
   margin: 0 auto;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
+
   button {
     width: 90%;
+  }
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+  .app-container {
+    text-align: left;
+  }
+
+  .footer {
+    width: 40.2%;
+    padding: 20px 0;
+
+    button {
+      width: 200px;
+    }
   }
 }
