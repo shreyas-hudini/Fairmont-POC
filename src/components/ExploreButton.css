@@ -1,0 +1,49 @@
+.explore-button-container {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.explore-button {
+  background-image: url("../assets/rectangle.svg");
+  border: none;
+  width: 300px;
+  height: 48px;
+  font-family: "ITC Franklin Gothic Std", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.256px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Center the button */
+}
+
+.icon {
+  position: absolute;
+  right: 20px;
+}
+
+.drawer {
+  background-image: url("../assets/rectangle-153455.svg");
+  width: 100%;
+  position: absolute;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  bottom: 48px;
+}
+
+.drawer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.drawer li {
+  padding: 10px 0;
+  color: gray;
+}

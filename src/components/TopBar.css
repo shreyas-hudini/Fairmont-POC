@@ -1,0 +1,11 @@
+.top-bar {
+  height: 113px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/rectangle-146810.svg");
+}
+
+.top-bar-logo {
+  width: 100px; /* Adjust as necessary */
+}
